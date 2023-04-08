@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+}
+/* GENERAL */
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    height: auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #282C34;
+    
+}
+
+
+
+/* VISUALLY-HIDDEN */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* CONTAINER */
+.container{
+    max-width: YOUR CONTAINER MAX-WIDTH PX HERE;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* STICKY-FOOTER */
+.site-main{
+    flex-grow: 1;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-form {
+    -webkit-box-shadow:0px 0px 23px 8px rgba(252,252,252,0.25);
+    -moz-box-shadow: 0px 0px 23px 8px rgba(252,252,252,0.25);
+    box-shadow: 0px 0px 23px 8px rgba(252,252,252,0.25);
+}
+
+.main-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+    font-size: 15px;
+}
+.refresh {
+    display: none;
+}
+
+.on {
+    display: block;
+}
+
+.result {
+    text-align: center;
+}

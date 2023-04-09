@@ -32,7 +32,8 @@ elForm.addEventListener("submit", function(event) {
     displayMessage(`Vanihoyat Topdingiz, Tabriklayman, Tabassum qiling🤩🎊`)
     elInput.disabled = true;
     elRefresh.classList.add("on");
-    elBtn.classList.add("refresh")
+    elBtn.classList.add("refresh");
+    document.body.style.backgroundColor = "green";
   } else {
     displayMessage(inputValue > magicNumber ? "Vaybo', muncha katta🙄" : "Bundan kattaroq raqam o'ylaganman🥱")
     elInput.value = "";

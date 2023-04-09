@@ -11,7 +11,7 @@ const question = document.querySelector(".question");
 const mainTitle = document.querySelector(".main-title");
 const subtitle = document.querySelector(".subtitle");
 let remainlifeNumber = 5;
-let magicNumber = Math.trunc(Math.random() * 20);
+let magicNumber = Math.round(Math.random() * 20);
 
 //! PREVENTING THE FORM FROM BEING RELOADED
 elForm.addEventListener("submit", function(event) {

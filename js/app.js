@@ -38,6 +38,12 @@ elForm.addEventListener("submit", function(event) {
     displayMessage(inputValue > magicNumber ? "Vaybo', muncha katta🙄" : "Bundan kattaroq raqam o'ylaganman🥱")
     elInput.value = "";
     remainlifeNumber--;
+    elInput.classList.add("animate__headShake");
+    elInput.classList.add("error-red");
+    setTimeout(() => {
+      elInput.classList.remove("animate__headShake");
+      elInput.classList.remove("error-red");
+    }, 500);
   };
   
   life.textContent = remainlifeNumber;
@@ -46,7 +52,6 @@ elForm.addEventListener("submit", function(event) {
     life.textContent = "Afsuski yutqazdingiz, qayta urinib ko'ring...🐈‍⬛";
     elInput.classList.add("refresh")
     elRefresh.classList.add("on");
-    elRefresh.style.marginBottom = "0 !important";
     elForm.classList.add("form-control")
     displayMessage.disabled = true;
     elResult.classList.add("refresh")
@@ -56,6 +61,8 @@ elForm.addEventListener("submit", function(event) {
     mainTitle.classList.add("refresh");
     subtitle.classList.add("refresh")
   }
+  
+  
 });
 
 

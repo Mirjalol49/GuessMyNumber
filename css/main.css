@@ -136,8 +136,13 @@ body{
     text-align: center;
 }
 
+.error-red {
+    background-color: rgb(255, 0, 0);
+    transition: 0.2s;
+}
 
-/** MOBILE VERSION */
+ 
+  /** MOBILE VERSION */
 
 @media  only screen and (max-width: 766px) {
     
